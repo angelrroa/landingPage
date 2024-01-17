@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="shortcut icon" sizes="144x144" href="storage/img/Porsche-Logo-1994.png" type="image/png">
     <title>Landing Page</title>
 </head>
+
 <body>
     <nav>
         <div class="container">
@@ -27,25 +29,39 @@
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <section>
-                <div class="content">
-                    <div class="main-content">
-                        <h1>Porsche</h1>
-                        <h2>911 GT3 RS</h2>
-                        <h4>La perfección nunca es el principio</h4>
-                        <p>Los atletas lo saben: el máximo rendimiento requiere algo más que condiciones perfectas y suerte. El factor decisivo es la voluntad incondicional de volverse más rápido y más fuerte con cada sesión de entrenamiento. Cuestionarse todo, especialmente a sí mismo. Y aprender el máximo de cada error. Porque el mayor desafío es permanecer imbatible. Solo con este enfoque, Porsche es capaz de seguir ampliando los límites de lo factible. Para un aumento adicional del rendimiento en el circuito, gracias a un agarre radical y la amplia construcción ligera. Experimente el nuevo 911 GT3 RS en su máximo rendimiento.</p>
-                    <div class="order">
-                        <h3>$397.900</h3>
-                        <button>COMPRAR</button>
-                    </div>
-                    </div>
-                    <div class="image">
-                        <img src="storage/img/porsche-model.png" alt="">
-                    </div>
-                </div>
-            </section>
         </div>
     </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">Porsche</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">911 GT3 RS</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">La perfección nunca es el principio</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">Los atletas lo saben: el máximo rendimiento requiere algo más que condiciones perfectas y
+                    suerte. El factor decisivo es la voluntad incondicional de volverse más rápido y más fuerte
+                    con cada sesión de entrenamiento. Cuestionarse todo, especialmente a sí mismo. Y aprender el
+                    máximo de cada error. Porque el mayor desafío es permanecer imbatible. Solo con este
+                    enfoque, Porsche es capaz de seguir ampliando los límites de lo factible. Para un aumento
+                    adicional del rendimiento en el circuito, gracias a un agarre radical y la amplia
+                    construcción ligera. Experimente el nuevo 911 GT3 RS en su máximo rendimiento.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">$397.900</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800">PRE-ORDENAR AHORA</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="storage/img/porsche-model.png" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:1
+        });
+    </script>
 </body>
+
 </html>
