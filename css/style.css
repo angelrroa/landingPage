@@ -11,7 +11,83 @@ body{
     overflow: hidden;
     background-color: black;
 }
+
+.container{
+    background: white;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    max-width: 1024px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+ul li a{
+    padding: 0 16px;
+}
+p{
+    margin: 0;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+}
 nav{
+    position: fixed;
+    background: tomato;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+nav.active{
+    transform: translateX(0);
+}
+.circulo{
+    width: 30px;
+    height: 30px;
+    background: purple;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.boton{
+    background: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+.boton .linea{
+    height: 2px;
+    width: 20px;
+    background: black;
+    margin: 4px 0;
+}
+@media(min-width: 768px){
+    .boton{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        background: white;
+        position: inherit;
+    }
+    ul{
+        flex-direction: row;
+    }
+
+}
+
+/* nav{
     width: 100%;
     height: 10vh;
 }
@@ -34,7 +110,7 @@ nav{
     position: relative;
     margin: 0 20px;
     transition: 0.3s linear;
-}
+} */
 .links a::before{
     content: "";
     position: absolute;
@@ -118,6 +194,7 @@ section .content{
     margin-right: 100px;
     transform:translateX(900px);
     filter: drop-shadow(-10px -10px 200px #f74f10);
+    cursor: pointer;
 }
 @media (max-width:800px){
     .content{
